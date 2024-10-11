@@ -1,37 +1,28 @@
-class Person {
-    constructor(name, age) {
-        this._name = name; // Using underscore to indicate a private property
-        this._age = age;
+class Person{
+    constructor(name,age){
+        this._name = name
+        this.ageNum = age
     }
-
-    // Getter for name
-    get name() {
-        return this._name;
+    get name(){
+        return  this._name
     }
-
-    // Setter for age
-    set age(newAge) {
-         this._age = newAge;
+    
+    set age(value){
+        this.ageNum = value
     }
-  get age(){
-    return this_age
-  }
+    get age(){
+        return this.ageNum
+    }
 }
-
-// Student Class extending Person
-class Student extends Person {
+class Student extends Person{
+    
     study(){
-        console.log(`${this.name} is studying`);
+        console.log(`${this.name} is studying`)
     }
 }
-
-// Teacher Class extending Person
-class Teacher extends Person {
-    teach() {
-        console.log(`${this.name} is teaching`);
+class Teacher extends Person{
+    
+    teach(){
+        console.log(`${this.name} is teaching`)
     }
-	
 }
-window.Person = Person;
-window.Teacher = Teacher;
-window.Student= Student
