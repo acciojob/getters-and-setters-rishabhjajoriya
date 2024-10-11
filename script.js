@@ -30,7 +30,8 @@ class Teacher extends Person {
     teach() {
         console.log(`${this.name} is teaching.`);
     }
-	win.Person = Person
-	win.Teacher = Teacher
-	win.Student= Student
+	
 }
+window.Person = Person;
+window.Teacher = Teacher;
+window.Student= Student
