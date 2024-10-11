@@ -17,3 +17,17 @@ class Person {
     return this_age
   }
 }
+
+// Student Class extending Person
+class Student extends Person {
+    study(){
+        console.log(`${this.name} is studying.`);
+    }
+}
+
+// Teacher Class extending Person
+class Teacher extends Person {
+    teach() {
+        console.log(`${this.name} is teaching.`);
+    }
+}
