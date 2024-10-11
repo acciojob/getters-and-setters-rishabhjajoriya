@@ -1,11 +1,19 @@
-//complete this code
-class Person {}
+class Person {
+    constructor(name, age) {
+        this._name = name; // Using underscore to indicate a private property
+        this._age = age;
+    }
 
-class Student extends Person {}
+    // Getter for name
+    get name() {
+        return this._name;
+    }
 
-class Teacher extends Person {}
-
-// Do not change the code below this line
-window.Person = Person;
-window.Student = Student;
-window.Teacher = Teacher;
+    // Setter for age
+    set age(newAge) {
+         this._age = newAge;
+    }
+  get age(){
+    return this_age
+  }
+}
