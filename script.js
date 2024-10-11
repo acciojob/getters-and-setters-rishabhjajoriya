@@ -26,3 +26,7 @@ class Teacher extends Person{
         console.log(`${this.name} is teaching`)
     }
 }
+
+window.Person = Person
+window.Student = Student
+window.Teacher = Teacher 
